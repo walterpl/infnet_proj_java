@@ -12,8 +12,13 @@ public class ClienteController {
 		return "Cliente/cadastro";
 	}
 	
+	@GetMapping(value = "/Clientes")
+	public String lista() {
+		return "Cliente/lista";
+	}
+	
 	@PostMapping(value ="/Cliente/incluir")
 	public String incluir () {
-		return "index";
+		return "Cliente/lista";
 	}
 }

@@ -11,8 +11,12 @@ public class ContratacaoController {
 		return "Contratacao/cadastro";
 	}
 	
+	@GetMapping(value = "/Contratacoes")
+	public String lista() {
+		return "Contratacao/lista";
+	}
 	@PostMapping(value ="/Contratacao/incluir")
 	public String incluir () {
-		return "index";
+		return "Contratacao/lista";
 	}	
 }

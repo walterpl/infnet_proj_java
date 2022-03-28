@@ -22,7 +22,7 @@
 					name="age">
 			</div>
 			<div class="mb-3">
-				<label for="pwd">Password:</label> <input type="text"
+				<label for="pwd">card_number:</label> <input type="text"
 					class="form-control" id="card" placeholder="Informe o numero do cartão"
 					name="cardnum">
 			</div>
