@@ -11,9 +11,14 @@ public class ServicoController {
 		return "Servico/cadastro";
 	}
 	
+	@GetMapping(value = "/Servicos")
+	public String lista() {
+		return "Servico/lista";
+	}
+	
 	@PostMapping(value ="/Servico/incluir")
 	public String incluir () {
-		return "index";
+		return "Servico/lista";
 	}	
 	
 }
