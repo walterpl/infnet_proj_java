@@ -1,5 +1,6 @@
 package br.edu.infnet.pedido.controller;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -16,7 +17,7 @@ public class ContratacaoController {
 		return "Contratacao/lista";
 	}
 	@PostMapping(value ="/Contratacao/incluir")
-	public String incluir () {
-		return "Contratacao/lista";
+	public String incluir (Model model) {
+		return "redirect:/lista";
 	}	
 }

@@ -16,9 +16,9 @@ public class AcessoController {
 		}
 	
 	@PostMapping(value = "/login")
-	public String login(Model model, @RequestParam String email, @RequestParam String password) {
+	public String login(Model model, @RequestParam String email, @RequestParam String senha) {
 		
-		if (email.equalsIgnoreCase(password)) {
+		if (email.equalsIgnoreCase(senha)) {
 			return "index";
 		}
 		

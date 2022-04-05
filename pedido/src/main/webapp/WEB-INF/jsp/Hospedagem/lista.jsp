@@ -17,27 +17,31 @@
 			<button type="submit" class="btn btn-primary">Novo Hotel</button>
 		</form>
 		<c:if test="${not empty comps_hotel}">
-			<p>Lista de Hoteis(${comps_hotel.size()})</p>
+			<p>Lista de Hoteis(${comps_hotel.size()}):</p>
 			<table class="table table-hover">
 				<thead>
 					<tr>
+						<th>ID</th>
 						<th>Nome</th>
 						<th>Numero de Estrelas</th>
 						<th>Possui Concierge</th>
 						<th>Data de Check-in</th>
 						<th>Data de Check-out</th>
 						<th>Numero de Hospedes</th>
+						<th></th>
 					</tr>
 				</thead>
 				<tbody>
-					<c:forEach var ="o" items="${comps_hotel}">
+					<c:forEach var="o" items="${comps_hotel}">
 						<tr>
+							<td>o.id</td>
 							<td>o.hotel</td>
 							<td>o.numstar</td>
 							<td>o.concierge</td>
 							<td>o.data_ida</td>
 							<td>o.data_retorno</td>
 							<td>o.count_pessoas</td>
+							<td><a href="/hospedagem/${o.id}/excluir" }">excluir</a></td>
 						</tr>
 					</c:forEach>
 				</tbody>

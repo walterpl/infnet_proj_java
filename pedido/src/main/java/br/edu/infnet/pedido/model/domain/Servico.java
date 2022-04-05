@@ -4,7 +4,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public abstract class Servico {
-
+ 
+	private Integer id;
 	private LocalDate data_ida;
 	private LocalDate data_retorno ;
 	private Integer count_pessoas ;
@@ -34,23 +35,40 @@ public abstract class Servico {
 	}
 	
 	public abstract float calcular_Valor_servico();
-	
-	public void setCount_pessoas(Integer count_pessoas) {
-		this.count_pessoas = count_pessoas;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public LocalDate getData_ida() {
 		return data_ida;
 	}
 
+	public void setData_ida(LocalDate data_ida) {
+		this.data_ida = data_ida;
+	}
+
 	public LocalDate getData_retorno() {
 		return data_retorno;
+	}
+
+	public void setData_retorno(LocalDate data_retorno) {
+		this.data_retorno = data_retorno;
 	}
 
 	public Integer getCount_pessoas() {
 		return count_pessoas;
 	}
 
+	public void setCount_pessoas(Integer count_pessoas) {
+		this.count_pessoas = count_pessoas;
+	}
+	
+	
 
 	
 }

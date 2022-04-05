@@ -28,8 +28,8 @@ public class TransporteController {
 	}
 	
 	@PostMapping(value ="/Transporte/incluir")
-	public String incluir () {
-		return "Transporte/lista";
+	public String incluir (Model model) {
+		return "redirect:/lista";
 	}	
 	
 	

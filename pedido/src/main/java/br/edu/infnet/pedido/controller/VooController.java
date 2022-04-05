@@ -29,8 +29,8 @@ public class VooController {
 	
 	
 	@PostMapping(value ="/Voo/incluir")
-	public String incluir () {
-		return "Voo/lista";
+	public String incluir (Model model) {
+		return "redirect:/lista";
 	}	
 
 }

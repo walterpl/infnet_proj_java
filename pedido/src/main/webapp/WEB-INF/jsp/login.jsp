@@ -21,11 +21,11 @@
   <form action="/login" method= "post">
     <div class="mb-3 mt-3">
       <label>Email:</label>
-      <input type="email" class="form-control" placeholder="Informe email de Acesso." name="email">
+      <input type="email" class="form-control" placeholder="Informe email de Acesso." name="email" value = "walter@infnet.com">
     </div>
     <div class="mb-3">
       <label>Password:</label>
-      <input type="password" class="form-control"placeholder="Informe a senha" name="senha">
+      <input type="password" class="form-control"placeholder="Informe a senha" name="senha"value = "walter@infnet.com" >
     </div>
     <button type="submit" class="btn btn-primary">Entrar</button>
   </form>
